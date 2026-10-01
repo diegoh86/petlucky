@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetLucky | Petshop, Banho e Tosa, Clínica Veterinária e Delivery</title>
+    
+    <!-- Meta SEO -->
+    <meta name="description" content="PetLucky: 25 anos de tradição em Petshop, Banho e Tosa com produtos ozonizados, Consultas Veterinárias, Vacinas, Rações e Delivery. Localizado na Rua Visconde de Figueiredo, 4. Agende pelo WhatsApp!">
+    <meta name="keywords" content="Petshop, Banho e Tosa, Produtos Ozonizados Pet, Veterinária, Vacinas Pet, Rações, Delivery Petshop, Pet Lucky, Visconde de Figueiredo, Banho Terça Desconto">
+    <meta name="author" content="PetLucky - Desenvolvido por DHA Consultoria">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://petlucky.com.br/">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://petlucky.com.br/">
+    <meta property="og:title" content="PetLucky | Petshop, Banho e Tosa com Ozônio, Vet &amp; Delivery">
+    <meta property="og:description" content="Há 25 anos cuidando do seu pet como parte da família! Banhos ozonizados, consultas, vacinas, rações e delivery. WhatsApp: (21) 96767-1362.">
+    <meta property="og:image" content="assets/images/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="PetLucky | 25 Anos de Tradição Pet">
+    <meta property="twitter:description" content="Banho e tosa ozonizado, consultas veterinárias, vacinas e delivery rápido.">
+    <meta property="twitter:image" content="assets/images/logo.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
+
+    <!-- Tailwind CSS (via CDN) com Custom Configuration -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sage: {
+                            50: '#F4F9F6',
+                            100: '#E2F0EA',
+                            200: '#C2E1D4',
+                            300: '#9ECDBB',
+                            400: '#84BBA0', // Cor oficial da logo
+                            500: '#64A284',
+                            600: '#4A876B',
+                            700: '#376952',
+                            800: '#264A3B',
+                            900: '#172F25',
+                        },
+                        sunshine: {
+                            400: '#FBBF24',
+                            500: '#F59E0B',
+                            600: '#D97706',
+                        },
+                        brandDark: '#192C23',
+                        waGreen: '#25D366',
+                        waHover: '#1EBE5A',
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Segoe UI', 'Roboto', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        '4xl': '2rem',
+                        '5xl': '2.5rem',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Schema.org JSON-LD para SEO Local -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "PetStore",
+      "name": "PetLucky",
+      "image": "assets/images/logo.png",
+      "@id": "https://petlucky.com.br",
+      "url": "https://petlucky.com.br",
+      "telephone": ["+552132340448", "+552132340449", "+5521967671362"],
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Visconde de Figueiredo, 4, Loja D",
+        "addressLocality": "Tijuca",
+        "addressRegion": "RJ",
+        "postalCode": "20550-010",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -22.9238,
+        "longitude": -43.2345
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "17:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/petluckyoficial/",
+        "https://web.facebook.com/petluckyoficial/?locale=pt_BR"
+      ]
+    }
+    </script>
+</head>
+<body class="bg-[#FAFDFB] text-slate-800 antialiased font-sans flex flex-col min-h-screen selection:bg-sage-400 selection:text-white">
+
+    <!-- TOP BAR INFORMATIVA -->
+    <div class="bg-brandDark text-white py-2.5 px-4 text-xs md:text-sm shadow-inner">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+                <span class="flex items-center gap-1.5 text-sage-200 font-medium">
+                    <i class="fa-solid fa-location-dot text-sunshine-400"></i> Rua Visconde de Figueiredo, 4 - Loja D - Tijuca, RJ
+                </span>
+                <span class="hidden md:inline text-sage-700">|</span>
+                <a href="tel:02132340448" class="flex items-center gap-1.5 hover:text-sunshine-400 transition-colors font-medium">
+                    <i class="fa-solid fa-phone text-sage-400"></i> (21) 3234-0448 / 3234-0449
+                </a>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="text-sage-200 hidden lg:inline font-medium">🐾 Siga nossas fofuras:</span>
+                <a href="https://www.instagram.com/petluckyoficial/" target="_blank" rel="noopener noreferrer" class="hover:text-sunshine-400 transition-colors" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram text-base"></i>
+                </a>
+                <a href="https://web.facebook.com/petluckyoficial/?locale=pt_BR" target="_blank" rel="noopener noreferrer" class="hover:text-sunshine-400 transition-colors" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f text-base"></i>
+                </a>
+                <a href="https://wa.me/5521967671362?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20PetLucky%20e%20gostaria%20de%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" class="bg-waGreen hover:bg-waHover text-white px-3 py-1 rounded-full font-bold flex items-center gap-1.5 text-xs shadow-sm transition-transform hover:scale-105">
+                    <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp: (21) 96767-1362
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CABEÇALHO PRINCIPAL STICKY -->
+    <header id="main-header" class="sticky top-0 z-40 bg-white/95 backdrop-blur-md transition-all duration-300 border-b border-sage-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- LOGO DA PETLUCKY -->
+            <a href="#" class="flex items-center gap-3.5 group">
+                <div class="bg-sage-400 p-1.5 rounded-2xl shadow-md group-hover:rotate-3 transition-transform duration-300">
+                    <img src="assets/images/logo.png" alt="PetLucky Logo" class="h-12 w-auto object-contain">
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-2xl font-extrabold text-brandDark tracking-tight flex items-center gap-1">
+                        Pet<span class="text-sage-600">Lucky</span>
+                        <i class="fa-solid fa-paw text-sunshine-500 text-sm animate-bounce"></i>
+                    </span>
+                    <span class="text-xs font-bold text-slate-500 tracking-wider uppercase">Petshop &amp; Clínica Veterinária</span>
+                </div>
+            </a>
+
+            <!-- NAVEGAÇÃO DESKTOP -->
+            <nav class="hidden md:flex items-center gap-8 font-semibold text-slate-700">
+                <a href="#inicio" class="hover:text-sage-600 transition-colors">Início</a>
+                <a href="#sobre" class="hover:text-sage-600 transition-colors">A PetLucky</a>
+                <a href="#servicos" class="hover:text-sage-600 transition-colors">Serviços</a>
+                <a href="#galeria" class="hover:text-sage-600 transition-colors">Galeria</a>
+                <a href="#depoimentos" class="hover:text-sage-600 transition-colors">Depoimentos</a>
+                <a href="#contato" class="hover:text-sage-600 transition-colors">Localização</a>
+            </nav>
+
+            <!-- CTA PRINCIPAL DESKTOP -->
+            <div class="hidden md:flex items-center gap-3">
+                <a href="https://wa.me/5521967671362?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20servi%C3%A7o%20na%20PetLucky." target="_blank" rel="noopener noreferrer" class="bg-waGreen hover:bg-waHover text-white px-6 py-3 rounded-full font-extrabold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 transform hover:-translate-y-0.5">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>Agendar pelo WhatsApp</span>
+                </a>
+            </div>
+
+            <!-- BOTÃO MOBILE -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-700 hover:text-sage-600 p-2 focus:outline-none" aria-label="Menu de navegação">
+                <i id="menu-icon-open" class="fa-solid fa-bars text-2xl"></i>
+                <i id="menu-icon-close" class="fa-solid fa-xmark text-2xl hidden"></i>
+            </button>
+        </div>
+
+        <!-- MENU MOBILE DROPDOWN -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-sage-200 px-4 pt-3 pb-6 shadow-2xl space-y-3">
+            <a href="#inicio" class="block py-2 text-slate-700 font-bold hover:text-sage-600 border-b border-slate-100">Início</a>
+            <a href="#sobre" class="block py-2 text-slate-700 font-bold hover:text-sage-600 border-b border-slate-100">A PetLucky</a>
+            <a href="#servicos" class="block py-2 text-slate-700 font-bold hover:text-sage-600 border-b border-slate-100">Serviços</a>
+            <a href="#galeria" class="block py-2 text-slate-700 font-bold hover:text-sage-600 border-b border-slate-100">Galeria</a>
+            <a href="#depoimentos" class="block py-2 text-slate-700 font-bold hover:text-sage-600 border-b border-slate-100">Depoimentos</a>
+            <a href="#contato" class="block py-2 text-slate-700 font-bold hover:text-sage-600 border-b border-slate-100">Localização &amp; Contato</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <a href="https://wa.me/5521967671362?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20servi%C3%A7o%20na%20PetLucky." target="_blank" rel="noopener noreferrer" class="bg-waGreen hover:bg-waHover text-white text-center py-3 rounded-2xl font-extrabold flex items-center justify-center gap-2 shadow-md">
+                    <i class="fa-brands fa-whatsapp text-xl"></i> Agendar pelo WhatsApp
+                </a>
+                <a href="tel:02132340448" class="bg-sage-100 text-brandDark text-center py-2.5 rounded-2xl font-bold flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-phone text-sage-600"></i> Ligar: (21) 3234-0448
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        
+        <!-- HERO SECTION ALEGRE -->
+        <section id="inicio" class="relative py-12 lg:py-20 bg-gradient-to-br from-sage-100/80 via-white to-sunshine-400/10 overflow-hidden">
+            <!-- ELEMENTOS DECORATIVOS -->
+            <div class="absolute top-10 left-10 text-sage-200 text-8xl opacity-40 -rotate-12 pointer-events-none">
+                <i class="fa-solid fa-paw"></i>
+            </div>
+            <div class="absolute bottom-10 right-10 text-sunshine-400 text-9xl opacity-25 rotate-12 pointer-events-none">
+                <i class="fa-solid fa-bone"></i>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                    
+                    <!-- CONTEÚDO HERO -->
+                    <div class="lg:col-span-6 space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 bg-sunshine-500/15 text-sunshine-600 border border-sunshine-500/30 px-4 py-1.5 rounded-full text-sm font-extrabold shadow-sm">
+                            <i class="fa-solid fa-award text-amber-500"></i>
+                            <span>25 Anos Cuidando de Pets como Família</span>
+                        </div>
+                        
+                        <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-brandDark tracking-tight leading-none">
+                            Onde seu pet é cuidado com amor e dedicação! 🐾🧡
+                        </h1>
+                        
+                        <p class="text-lg md:text-xl text-slate-600 font-medium max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                            Banho e tosa ozonizado, rações e acessórios, consultas veterinárias, vacinas e serviço de delivery na <strong>Rua Visconde de Figueiredo, 4</strong>.
+                        </p>
+
+                        <!-- BANNER PROMOCIONAL TERÇA-FEIRA -->
+                        <div class="bg-amber-100/80 border border-amber-300 p-3 rounded-2xl flex items-center justify-center lg:justify-start gap-3 text-xs md:text-sm font-bold text-amber-900 shadow-sm max-w-md mx-auto lg:mx-0">
+                            <i class="fa-solid fa-[#000] fa-percent bg-amber-400 text-amber-950 p-2 rounded-xl text-base"></i>
+                            <span>Toda terça-feira tem <strong>desconto especial no Banho e Tosa!</strong> 🛁</span>
+                        </div>
+
+                        <!-- CTA BUTTONS -->
+                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                            <a href="https://wa.me/5521967671362?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20PetLucky%20e%20quero%20agendar%20um%20servi%C3%A7o." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-waGreen hover:bg-waHover text-white px-8 py-4 rounded-3xl font-extrabold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3 transform hover:-translate-y-1">
+                                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                                <span>Agendar pelo WhatsApp</span>
+                            </a>
+                            <a href="#servicos" class="w-full sm:w-auto bg-white hover:bg-sage-50 text-brandDark border-2 border-sage-300 px-6 py-4 rounded-3xl font-bold text-base shadow-sm transition-all flex items-center justify-center gap-2">
+                                <span>Ver Nossos Serviços</span>
+                                <i class="fa-solid fa-arrow-down text-sage-600"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- FOTO HERO PRINCIPAL -->
+                    <div class="lg:col-span-6">
+                        <div class="relative max-w-lg mx-auto">
+                            <div class="absolute -top-4 -left-4 w-72 h-72 bg-sage-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
+                            <div class="absolute -bottom-4 -right-4 w-72 h-72 bg-sunshine-400 rounded-full mix-blend-multiply filter blur-xl opacity-60"></div>
+
+                            <div class="relative bg-white rounded-5xl p-4 shadow-2xl border-4 border-white overflow-hidden transform rotate-1 hover:rotate-0 transition-transform duration-500">
+                                <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=1000&q=80" alt="Cãozinho alegre e feliz na PetLucky" class="w-full h-[420px] object-cover rounded-4xl">
+                                
+                                <!-- SELO FLUTUANTE DE AMOR E OZÔNIO -->
+                                <div class="absolute bottom-8 left-8 bg-white/95 backdrop-blur-md p-4 rounded-3xl shadow-2xl border border-sage-100 flex items-center gap-3.5 max-w-xs animate-bounce">
+                                    <div class="w-12 h-12 bg-sage-400 text-brandDark rounded-2xl flex items-center justify-center text-xl font-bold shrink-0">
+                                        <i class="fa-solid fa-droplet text-cyan-700"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-extrabold text-brandDark text-sm">Banhos com Ozônio</h4>
+                                        <p class="text-xs text-slate-500">Produtos ozonizados que tratam a pele e a pelagem!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO SOBRE A PETLUCKY (HISTÓRIA DOS 25 ANOS) -->
+        <section id="sobre" class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <div class="lg:col-span-6 relative">
+                        <div class="grid grid-cols-2 gap-4">
+                            <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=600&q=80" alt="Banho relaxante na PetLucky" class="w-full h-64 object-cover rounded-3xl shadow-lg transform -rotate-2 hover:rotate-0 transition-transform">
+                            <img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?auto=format&fit=crop&w=600&q=80" alt="Consulta veterinária atenciosa" class="w-full h-64 object-cover rounded-3xl shadow-lg transform rotate-2 hover:rotate-0 transition-transform mt-8">
+                        </div>
+
+                        <!-- BADGE DE LOGO SOBERANA -->
+                        <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                            <div class="bg-white/95 p-4 rounded-3xl shadow-2xl border-4 border-sage-200 pointer-events-auto flex items-center gap-3">
+                                <img src="assets/images/logo.png" alt="PetLucky Logo" class="h-12 w-auto bg-sage-400 p-1 rounded-xl">
+                                <div>
+                                    <strong class="block text-brandDark font-extrabold text-base">PetLucky</strong>
+                                    <span class="text-xs text-slate-500 font-semibold">25 Anos de Histórias &amp; Carinho</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TEXTO INSTITUCIONAL -->
+                    <div class="lg:col-span-6 space-y-6">
+                        <div class="inline-flex items-center gap-2 bg-sage-100 text-sage-700 px-3.5 py-1 rounded-full text-xs font-extrabold">
+                            <i class="fa-solid fa-heart text-sage-600"></i> Nossa História
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-brandDark leading-tight">
+                            25 Anos cuidando do seu pet como parte da família 🧡
+                        </h2>
+                        <p class="text-slate-600 text-base md:text-lg leading-relaxed">
+                            É emocionante olhar para trás e ver tantas histórias, pets que cresceram com a gente e famílias que continuam ao nosso lado. Na <strong class="text-brandDark">PetLucky</strong>, tudo foi pensado para que seu companheiro receba o máximo de dedicação, carinho e respeito.
+                        </p>
+                        <p class="text-slate-600 leading-relaxed">
+                            Um espaço completo na <strong class="text-slate-800">Rua Visconde de Figueiredo, 4 (Loja D)</strong> onde a experiência se une à inovação — como a introdução de <strong>produtos ozonizados</strong> no banho e tosa para cuidar da saúde da pele e pelagem do seu pet.
+                        </p>
+
+                        <!-- CARDS DOS PILARES -->
+                        <div class="grid grid-cols-2 gap-4 pt-2">
+                            <div class="bg-sage-50 p-4 rounded-2xl border border-sage-200 space-y-1">
+                                <div class="text-sage-600 text-base font-extrabold"><i class="fa-solid fa-droplet text-cyan-600"></i> Produtos Ozonizados</div>
+                                <p class="text-xs text-slate-600">Cuidado profundo da pele e pelagem em várias etapas do banho.</p>
+                            </div>
+                            <div class="bg-sage-50 p-4 rounded-2xl border border-sage-200 space-y-1">
+                                <div class="text-sunshine-600 text-base font-extrabold"><i class="fa-solid fa-tags"></i> Terça com Desconto</div>
+                                <p class="text-xs text-slate-600">Toda terça-feira tem promoção especial no banho e tosa!</p>
+                            </div>
+                        </div>
+
+                        <div class="pt-4">
+                            <a href="https://wa.me/5521967671362?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20PetLucky." target="_blank" rel="noopener noreferrer" class="bg-brandDark hover:bg-slate-800 text-white font-extrabold px-6 py-3.5 rounded-2xl shadow-md transition-all inline-flex items-center gap-2">
+                                <i class="fa-brands fa-whatsapp text-waGreen text-xl"></i>
+                                <span>Falar pelo WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE SERVIÇOS -->
+        <section id="servicos" class="py-16 md:py-24 bg-sage-50/70 border-y border-sage-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                    <span class="bg-sunshine-400/20 text-sunshine-600 font-extrabold px-4 py-1.5 rounded-full text-xs uppercase tracking-wider inline-block">
+                        <i class="fa-solid fa-sparkles"></i> Nossos Serviços
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-brandDark">
+                        Tudo o que seu pet precisa em um só lugar
+                    </h2>
+                    <p class="text-slate-600 text-base md:text-lg">
+                        Conheça nossas 5 soluções especializadas feitas com dedicação e responsabilidade.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- SERVIÇO 1: ✂️ BANHO E TOSA -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-sage-200 flex flex-col justify-between group">
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=800&q=80" alt="Banho e Tosa ozonizado" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-4 right-4 bg-waGreen text-white font-extrabold text-xs px-3 py-1 rounded-full shadow-md">
+                                ✂️ Banho &amp; Tosa
+                            </span>
+                        </div>
+                        <div class="p-6 space-y-3 flex-grow">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-2xl font-bold text-brandDark">Banho e Tosa</h3>
+                                <span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded-lg">Terça c/ Desconto</span>
+                            </div>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Banho relaxante, tosa higiênica e tosa da raça. Agora com <strong>produtos ozonizados</strong> que cuidam da saúde da pele e deixam a pelagem macia e perfumada!
+                            </p>
+                            <ul class="text-xs font-semibold text-slate-600 space-y-1.5 pt-2">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-sage-600"></i> Tratamento com produtos Ozonizados</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-sage-600"></i> Desconto especial em todas as terças-feiras</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-sage-600"></i> Toalhas individuais seladas</li>
+                            </ul>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <a href="https://wa.me/5521967671362?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20Banho%20e%20Tosa%20na%20PetLucky." target="_blank" rel="noopener noreferrer" class="w-full bg-waGreen hover:bg-waHover text-white py-3 rounded-2xl font-extrabold text-center block text-sm shadow-md transition-colors">
+                                <i class="fa-brands fa-whatsapp text-lg"></i> Agendar Banho e Tosa
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- SERVIÇO 2: 🦴 RAÇÕES E ACESSÓRIOS -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-sage-200 flex flex-col justify-between group">
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&w=800&q=80" alt="Rações e Acessórios Pet" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-4 right-4 bg-sunshine-500 text-brandDark font-extrabold text-xs px-3 py-1 rounded-full shadow-md">
+                                🦴 Produtos Pet
+                            </span>
+                        </div>
+                        <div class="p-6 space-y-3 flex-grow">
+                            <h3 class="text-2xl font-bold text-brandDark">Rações e Acessórios</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                As melhores marcas de rações Super Premium e medicinais, petiscos saborosos e saudáveis, além de coleiras, caminhada, brinquedos e caixas de transporte.
+                            </p>
+                            <ul class="text-xs font-semibold text-slate-600 space-y-1.5 pt-2">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-sage-600"></i> Rações Super Premium e terapêuticas</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-sage-600"></i> Brinquedos educativos e tapetes higiênicos</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-sage-600"></i> Acessórios de alta durabilidade</li>
+                            </ul>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <a href="https://wa.me/5521967671362?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20ra%C3%A7%C3%A3o%20ou%20acess%C3%B3rios." target="_blank" rel="noopener noreferrer" class="w-full bg-brandDark hover:bg-slate-800 text-white py-3 rounded-2xl font-extrabold text-center block text-sm shadow-md transition-colors">
+                                <i class="fa-brands fa-whatsapp text-lg"></i> Pedir Rações &amp; Acessórios
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- SERVIÇO 3: 🩺 CONSULTAS -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-sage-200 flex flex-col justify-between group">
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?auto=format&fit=crop&w=800&q=80" alt="Consultas veterinárias dedicadas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-4 right-4 bg-sage-600 text-white font-extrabold text-xs px-3 py-1 rounded-full shadow-md">
+                                🩺 Atendimento Vet
+                            </span>
+                        </div>
+                        <div class="p-6 space-y-3 flex-grow">
+                            <h3 class="text-2xl font-bold text-brandDark">Consultas Veterinárias</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Atendimento clínico humanizado focado na saúde e na qualidade de vida do seu companheiro. Médicos veterinários experientes para avaliações e exames.
+                            </p>
+                            <ul class="text-xs font-semibold text-slate-600 space-y-1.5 pt-2">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-sage-600"></i> Avaliação clínica completa de rotina</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-sage-600"></i> Diagnóstico e acompanhamento contínuo</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-sage-600"></i> Atendimento carinhoso sem trauma</li>
+                            </ul>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <a href="https://wa.me/5521967671362?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20Consulta%20Veterin%C3%A1ria." target="_blank" rel="noopener noreferrer" class="w-full bg-waGreen hover:bg-waHover text-white py-3 rounded-2xl font-extrabold text-center block text-sm shadow-md transition-colors">
+                                <i class="fa-brands fa-whatsapp text-lg"></i> Marcar Consulta
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- SERVIÇO 4: 💉 VACINAS -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-sage-200 flex flex-col justify-between group">
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=800&q=80" alt="Vacinas importadas para cães e gatos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-4 right-4 bg-sky-600 text-white font-extrabold text-xs px-3 py-1 rounded-full shadow-md">
+                                💉 Proteção Pet
+                            </span>
+                        </div>
+                        <div class="p-6 space-y-3 flex-grow">
+                            <h3 class="text-2xl font-bold text-brandDark">Vacinas</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Manter a carteirinha de imunização em dia é fundamental! Aplicamos vacinas éticas importadas para cães e gatos em todas as fases da vida.
+                            </p>
+                            <ul class="text-xs font-semibold text-slate-600 space-y-1.5 pt-2">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-sage-600"></i> Vacinas Múltiplas (V10, V8, V4/V5)</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-sage-600"></i> Antirrábica, Gripe Canina e Giárdia</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-sage-600"></i> Atualização da carteira e lembretes</li>
+                            </ul>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <a href="https://wa.me/5521967671362?text=Ol%C3%A1!%20Gostaria%20de%20saber%20sobre%20as%20Vacinas%20para%20meu%20pet." target="_blank" rel="noopener noreferrer" class="w-full bg-brandDark hover:bg-slate-800 text-white py-3 rounded-2xl font-extrabold text-center block text-sm shadow-md transition-colors">
+                                <i class="fa-brands fa-whatsapp text-lg"></i> Agendar Vacinação
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- SERVIÇO 5: 🚀 DELIVERY / LEVA E TRAZ -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-sage-200 md:col-span-2 flex flex-col sm:flex-row group">
+                        <div class="sm:w-1/2 relative h-64 sm:h-auto overflow-hidden shrink-0">
+                            <img src="https://images.unsplash.com/photo-1544568100-847a948585b9?auto=format&fit=crop&w=800&q=80" alt="Delivery e Táxi Pet Leva e Traz" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-8 sm:w-1/2 flex flex-col justify-between space-y-4">
+                            <div>
+                                <span class="bg-sunshine-500/20 text-sunshine-600 font-extrabold text-xs px-3 py-1 rounded-full inline-block mb-2">
+                                    🚀 Rapidez no seu Endereço
+                                </span>
+                                <h3 class="text-2xl font-bold text-brandDark">Delivery &amp; Leva e Traz</h3>
+                                <p class="text-slate-600 text-sm leading-relaxed mt-2">
+                                    Precisou de ração, antipulgas ou medicamento urgente? Entregamos na sua casa! Além disso, nosso serviço de <strong>Táxi Pet</strong> busca e leva seu amiguinho para o banho com toda a segurança.
+                                </p>
+                            </div>
+                            <a href="https://wa.me/5521967671362?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20o%20Delivery%20ou%20Táxi%20Pet." target="_blank" rel="noopener noreferrer" class="bg-waGreen hover:bg-waHover text-white py-3.5 px-6 rounded-2xl font-extrabold text-center text-sm shadow-md transition-all flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-whatsapp text-xl"></i> Solicitar Delivery no WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DICAS PET -->
+        <section class="py-16 md:py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-gradient-to-r from-sage-700 to-brandDark rounded-4xl p-8 md:p-12 text-white shadow-xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    
+                    <div class="lg:col-span-8 space-y-4">
+                        <span class="bg-sunshine-500 text-brandDark font-black px-3.5 py-1 rounded-full text-xs uppercase tracking-wide">
+                            🐾 Dica PetLucky
+                        </span>
+                        <h3 class="text-2xl md:text-3xl font-extrabold leading-tight">
+                            Você sabia que dar bronca depois do xixi não funciona?
+                        </h3>
+                        <p class="text-sage-100 text-sm md:text-base leading-relaxed">
+                            Dar bronca depois que o xixi já secou só confunde a cabeça do seu cãozinho. O segredo é limpar com o produto enzimático correto para remover o odor, definir o local com tapetes higiênicos e recompensar muito quando ele acertar o alvo!
+                        </p>
+                    </div>
+
+                    <div class="lg:col-span-4 flex justify-center lg:justify-end">
+                        <a href="https://wa.me/5521967671362?text=Ol%C3%A1!%20Li%20a%20dica%20no%20site%20e%20gostaria%20de%20dicas%20para%20meu%20pet." target="_blank" rel="noopener noreferrer" class="bg-sunshine-500 hover:bg-sunshine-600 text-brandDark font-black px-6 py-4 rounded-2xl shadow-lg transition-transform hover:scale-105 flex items-center gap-2 text-sm">
+                            <i class="fa-brands fa-whatsapp text-xl"></i> Falar com Especialistas
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO GALERIA "NOSSOS AMIGOS FELIZES" -->
+        <section id="galeria" class="py-16 md:py-24 bg-sage-50/50 border-t border-sage-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+                    <span class="bg-sage-100 text-sage-700 font-extrabold px-4 py-1.5 rounded-full text-xs uppercase tracking-wider inline-block">
+                        <i class="fa-solid fa-camera"></i> Galeria da Fofura
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-brandDark">
+                        Nossos Amigos Felizes ❤️
+                    </h2>
+                    <p class="text-slate-600 text-base md:text-lg">
+                        Alguns dos focinhos que fazem parte dos nossos 25 anos de história!
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    
+                    <div class="group relative overflow-hidden rounded-3xl shadow-md h-64">
+                        <img src="https://images.unsplash.com/photo-1583511655826-05700d52f4d9?auto=format&fit=crop&w=600&q=80" alt="Bulldog Francês feliz na PetLucky" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brandDark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex items-end">
+                            <span class="text-white font-bold text-sm">Paçoca 🐾 (Banho Ozonizado)</span>
+                        </div>
+                    </div>
+
+                    <div class="group relative overflow-hidden rounded-3xl shadow-md h-64">
+                        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=600&q=80" alt="Gatinho persa bem cuidado" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brandDark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex items-end">
+                            <span class="text-white font-bold text-sm">Mimi 🐱 (Consulta &amp; Vacinas)</span>
+                        </div>
+                    </div>
+
+                    <div class="group relative overflow-hidden rounded-3xl shadow-md h-64">
+                        <img src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=600&q=80" alt="Poodle charmoso pós tosa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brandDark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex items-end">
+                            <span class="text-white font-bold text-sm">Teddy 🐩 (Tosa da Raça)</span>
+                        </div>
+                    </div>
+
+                    <div class="group relative overflow-hidden rounded-3xl shadow-md h-64">
+                        <img src="https://images.unsplash.com/photo-1505628346881-b72b27e84530?auto=format&fit=crop&w=600&q=80" alt="Beagle brincalhão" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brandDark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex items-end">
+                            <span class="text-white font-bold text-sm">Bento 🚀 (Delivery &amp; Táxi)</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DEPOIMENTOS DE TUTORES -->
+        <section id="depoimentos" class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                    <span class="bg-sunshine-500/20 text-sunshine-600 font-extrabold px-4 py-1.5 rounded-full text-xs uppercase tracking-wider inline-block">
+                        ★ Avaliações 5 Estrelas
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-brandDark">
+                        O carinho de quem frequenta a PetLucky
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <div class="bg-sage-50 p-8 rounded-3xl shadow-md border border-sage-200 flex flex-col justify-between relative">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400 gap-1 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-700 text-sm leading-relaxed italic">
+                                "O banho com produtos ozonizados fez toda a diferença na pelagem do meu Golden! E a promoção de terça-feira é excelente."
+                            </p>
+                        </div>
+                        <div class="pt-6 border-t border-sage-200 mt-6 flex items-center gap-3">
+                            <div class="w-12 h-12 bg-sage-400 text-brandDark font-extrabold rounded-2xl flex items-center justify-center text-base">
+                                MC
+                            </div>
+                            <div>
+                                <h4 class="font-extrabold text-slate-800 text-sm">Mariana Costa</h4>
+                                <span class="text-xs text-slate-500 font-medium">Tutora do Thor (Golden Retriever)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-sage-50 p-8 rounded-3xl shadow-md border border-sage-200 flex flex-col justify-between relative">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400 gap-1 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-700 text-sm leading-relaxed italic">
+                                "Tradição de 25 anos que a gente nota no atendimento. As veterinárias tratam meus gatos com uma dedicação impressionante."
+                            </p>
+                        </div>
+                        <div class="pt-6 border-t border-sage-200 mt-6 flex items-center gap-3">
+                            <div class="w-12 h-12 bg-sunshine-400 text-brandDark font-extrabold rounded-2xl flex items-center justify-center text-base">
+                                RS
+                            </div>
+                            <div>
+                                <h4 class="font-extrabold text-slate-800 text-sm">Ricardo Silva</h4>
+                                <span class="text-xs text-slate-500 font-medium">Tutor do Oliver e Nina</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-sage-50 p-8 rounded-3xl shadow-md border border-sage-200 flex flex-col justify-between relative">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400 gap-1 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-700 text-sm leading-relaxed italic">
+                                "O serviço de Delivery e Leva e Traz é hiper pontual e prático. Peço as rações pelo WhatsApp e chegam super rápido!"
+                            </p>
+                        </div>
+                        <div class="pt-6 border-t border-sage-200 mt-6 flex items-center gap-3">
+                            <div class="w-12 h-12 bg-sage-400 text-brandDark font-extrabold rounded-2xl flex items-center justify-center text-base">
+                                AF
+                            </div>
+                            <div>
+                                <h4 class="font-extrabold text-slate-800 text-sm">Amanda Ferreira</h4>
+                                <span class="text-xs text-slate-500 font-medium">Tutora da Mel (Shih Tzu)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO LOCALIZAÇÃO, MAPA & CONTATO (SEM FORMULÁRIO) -->
+        <section id="contato" class="py-16 md:py-24 bg-sage-100/50 border-t border-sage-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- DADOS DE CONTATO DIRETO E BOTÕES DE WHATSAPP -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <div>
+                            <span class="text-sage-600 font-bold uppercase tracking-wider text-xs">Atendimento Direto</span>
+                            <h2 class="text-3xl font-extrabold text-brandDark">Entre em Contato Conosco</h2>
+                            <p class="text-slate-600 text-sm mt-2">
+                                Estamos à disposição para tirar dúvidas, agendar banhos e consultas veterinárias ou realizar entregas no seu endereço.
+                            </p>
+                        </div>
+
+                        <!-- CARDS INFORMATIVOS -->
+                        <div class="space-y-4">
+                            <div class="bg-white p-5 rounded-2xl border border-sage-200 shadow-sm flex items-start gap-4">
+                                <div class="bg-sage-400 text-brandDark p-3.5 rounded-xl text-xl shrink-0">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <strong class="text-slate-800 block text-base font-bold">Endereço Completo:</strong>
+                                    <p class="text-slate-600 text-sm mt-1">Rua Visconde de Figueiredo, 4, Loja D - Tijuca, Rio de Janeiro - RJ</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-5 rounded-2xl border border-sage-200 shadow-sm flex items-start gap-4">
+                                <div class="bg-sage-400 text-brandDark p-3.5 rounded-xl text-xl shrink-0">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <strong class="text-slate-800 block text-base font-bold">Telefones Fixos:</strong>
+                                    <p class="text-slate-600 text-sm mt-1">
+                                        <a href="tel:02132340448" class="hover:text-sage-600 font-bold">(21) 3234-0448</a> / 
+                                        <a href="tel:02132340449" class="hover:text-sage-600 font-bold">(21) 3234-0449</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="bg-waGreen text-white p-6 rounded-3xl shadow-xl space-y-3">
+                                <div class="flex items-center gap-3">
+                                    <i class="fa-brands fa-whatsapp text-3xl"></i>
+                                    <div>
+                                        <strong class="block text-base">WhatsApp Comercial</strong>
+                                        <span class="text-xs text-white/90">Agendamentos, Delivery e Dúvidas</span>
+                                    </div>
+                                </div>
+                                <a href="https://wa.me/5521967671362?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20PetLucky." target="_blank" rel="noopener noreferrer" class="w-full bg-white text-waGreen hover:bg-slate-100 py-3 rounded-2xl font-extrabold text-center block text-base shadow transition-colors">
+                                    Falar no WhatsApp (21) 96767-1362
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- MAPA EMBUTIDO DO GOOGLE MAPS -->
+                    <div class="lg:col-span-7 flex flex-col h-full min-h-[450px]">
+                        <div class="bg-white p-5 rounded-3xl border border-sage-200 shadow-md flex-grow flex flex-col justify-between">
+                            <div class="mb-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+                                <div>
+                                    <h3 class="font-extrabold text-brandDark text-xl">Como Chegar na PetLucky</h3>
+                                    <p class="text-xs text-slate-500 font-semibold">Rua Visconde de Figueiredo, 4, Loja D - Tijuca, Rio de Janeiro - RJ</p>
+                                </div>
+                                <a href="https://maps.google.com/?q=Rua+Visconde+de+Figueiredo+4+Tijuca+Rio+de+Janeiro" target="_blank" rel="noopener noreferrer" class="bg-brandDark hover:bg-slate-800 text-white text-xs px-4 py-2.5 rounded-xl font-extrabold transition-colors flex items-center gap-1.5 shadow">
+                                    <i class="fa-solid fa-route text-sunshine-400"></i> Abrir GPS / Waze
+                                </a>
+                            </div>
+
+                            <div class="w-full flex-grow min-h-[380px] rounded-2xl overflow-hidden border border-sage-200 shadow-inner">
+                                <iframe 
+                                    title="Mapa de localização da PetLucky na Tijuca"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.887256565158!2d-43.23725512398547!3d-22.917578738318625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e64a856a95f%3A0xb30f80b95764d9fa!2sRua%20Visconde%20de%20Figueiredo%2C%204%20-%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+                                    width="100%" 
+                                    height="100%" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ INSTITUCIONAL COM ATRIBUIÇÃO OBRIGATÓRIA DA DHA CONSULTORIA -->
+    <footer class="bg-brandDark text-slate-300 pt-16 pb-8 border-t-8 border-sage-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+                
+                <!-- COLUNA 1: LOGO E SOBRE -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <img src="assets/images/logo.png" alt="PetLucky Logo" class="h-12 w-auto bg-sage-400 p-1.5 rounded-xl">
+                        <span class="text-2xl font-black text-white">Pet<span class="text-sage-400">Lucky</span></span>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed font-medium">
+                        Há 25 anos cuidando do seu melhor amigo como parte da família na Rua Visconde de Figueiredo.
+                    </p>
+                    
+                    <!-- REDES SOCIAIS -->
+                    <div class="flex items-center gap-3 pt-2">
+                        <a href="https://www.instagram.com/petluckyoficial/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-slate-800 hover:bg-sage-400 hover:text-brandDark rounded-2xl flex items-center justify-center transition-all" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram text-xl"></i>
+                        </a>
+                        <a href="https://web.facebook.com/petluckyoficial/?locale=pt_BR" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-slate-800 hover:bg-sage-400 hover:text-brandDark rounded-2xl flex items-center justify-center transition-all" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="https://wa.me/5521967671362?text=Ol%C3%A1!" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-waGreen hover:bg-waHover text-white rounded-2xl flex items-center justify-center transition-all shadow-md" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- COLUNA 2: OS 5 SERVIÇOS OFICIAIS -->
+                <div class="space-y-3">
+                    <h4 class="text-white font-extrabold text-base border-b border-slate-800 pb-2 inline-block">Nossos Serviços</h4>
+                    <ul class="space-y-2 text-sm text-slate-400 font-medium">
+                        <li><a href="#servicos" class="hover:text-sage-400 transition-colors">✂️ Banho e Tosa (c/ Ozônio)</a></li>
+                        <li><a href="#servicos" class="hover:text-sage-400 transition-colors">🦴 Rações e Acessórios</a></li>
+                        <li><a href="#servicos" class="hover:text-sage-400 transition-colors">🩺 Consultas Veterinárias</a></li>
+                        <li><a href="#servicos" class="hover:text-sage-400 transition-colors">💉 Vacinas Importadas</a></li>
+                        <li><a href="#servicos" class="hover:text-sage-400 transition-colors">🚀 Delivery &amp; Leva e Traz</a></li>
+                    </ul>
+                </div>
+
+                <!-- COLUNA 3: CONTATO -->
+                <div class="space-y-3">
+                    <h4 class="text-white font-extrabold text-base border-b border-slate-800 pb-2 inline-block">Contato</h4>
+                    <ul class="space-y-2.5 text-sm text-slate-400 font-medium">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-location-dot text-sunshine-400 mt-1"></i>
+                            <span>Rua Visconde de Figueiredo, 4, Loja D - Tijuca, Rio de Janeiro - RJ</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i class="fa-solid fa-phone text-sage-400"></i>
+                            <span>(21) 3234-0448 / (21) 3234-0449</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i class="fa-brands fa-whatsapp text-waGreen text-base"></i>
+                            <span class="text-white font-bold">(21) 96767-1362</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- COLUNA 4: HORÁRIOS -->
+                <div class="space-y-3">
+                    <h4 class="text-white font-extrabold text-base border-b border-slate-800 pb-2 inline-block">Horário de Funcionamento</h4>
+                    <div class="text-sm space-y-2 text-slate-400 font-medium">
+                        <p class="flex justify-between">
+                            <span>Segunda a Sexta:</span>
+                            <strong class="text-white">08:00 - 19:00</strong>
+                        </p>
+                        <p class="flex justify-between">
+                            <span>Sábado:</span>
+                            <strong class="text-white">08:00 - 17:00</strong>
+                        </p>
+                        <p class="flex justify-between">
+                            <span>Domingos e Feriados:</span>
+                            <span class="text-slate-500">Consultar</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CRÉDITO OBRIGATÓRIO DA DHA CONSULTORIA -->
+            <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400 text-center md:text-left font-medium">
+                <p>&copy; 2026 PetLucky Petshop. Todos os direitos reservados.</p>
+                <p>
+                    Desenvolvido por 
+                    <a href="https://dhaconsultoria.com.br" target="_blank" rel="noopener noreferrer" class="text-sage-400 font-extrabold hover:underline transition-all">
+                        DHA Consultoria (dhaconsultoria.com.br)
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+    <a href="https://wa.me/5521967671362?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20PetLucky%20e%20gostaria%20de%20informa%C3%A7%C3%B5es." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="fixed bottom-6 right-6 z-50 bg-waGreen hover:bg-waHover text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300 group"
+       aria-label="Falar pelo WhatsApp com a PetLucky">
+        <i class="fa-brands fa-whatsapp text-3xl md:text-4xl"></i>
+        <span class="absolute right-20 bg-brandDark text-white text-xs font-extrabold px-3 py-1.5 rounded-xl whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none shadow-xl border border-slate-700">
+            Fale conosco no WhatsApp!
+        </span>
+    </a>
+
+    <!-- SCRIPT JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
